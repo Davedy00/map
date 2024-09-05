@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf.js Example</title>
+    <script src="https://unpkg.com/@turf/turf@6.3.0/turf.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-100">
+    <div id="map" class="w-full h-screen border border-gray-300"></div>
+    <div class=" bg-gray-100 mt-5">
+        <button id="calculate-area" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Calculate Area</button>
+        <div id="area-result" class="mt-4 text-2xl font-bold text-gray-800"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
